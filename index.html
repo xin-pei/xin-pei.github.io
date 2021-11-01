@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8"/>
-	<title>你在身边，心沛乎喜</title>
+	<title>培</title>
 	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon"/>
 	<meta content="width=device-width, initial-scale=1, user-scalable=no"
 	      name="viewport"/>
@@ -28,7 +28,7 @@
 	<section
 			class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 		<div class="content">
-			<h1><b>Love</b> has <i>fallen</i> for</h1>
+			<h2>你在身边，<i>心沛</i> 之喜…</h2>
 			<p class="major" id="headline-timer"></p>
 			<p>图片里，是一个动态的四维超正方体。<br>
 				它的16个顶点在时空中交错飞舞。<br>
@@ -44,9 +44,8 @@
 
 	<section class="wrapper style1 align-center" id="timeline">
 		<div class="inner" style="padding-bottom:0">
-			<h2>Timeline</h2>
-			<p style="margin-bottom: 0">A quick glance at our story can just
-				make me smile.</p>
+			<h2>时间线</h2>
+			<p style="margin-bottom: 0">每每读一遍我们的故事都会让我嘴角上扬</p>
 		</div>
 		<div id='timeline-embed' style="width: 100%; height: 640px"></div>
 
@@ -58,8 +57,8 @@
 
 	<section class="wrapper style1 align-center">
 		<div class="inner">
-			<h2>Photo Gallery</h2>
-			<p>Cherished Memories in Pictures</p>
+			<h2>照相馆</h2>
+			<p>相片里记载着珍贵的回忆</p>
 		</div>
 
 		<div class="gallery style2 medium lightbox onscroll-fade-in">
@@ -80,23 +79,23 @@
 
 	<section class="wrapper style1 align-center">
 		<div class="inner">
-			<h2>To-Do List</h2>
-			<p>These things matter because of you.</p>
+			<h2>待办事项</h2>
+			<p>这些事只因你而变得重要</p>
 			<div class="items style1 medium onscroll-fade-in">
 				<section>
 					<i class="icon style2 major solid fas fa-route"></i>
 					<h3>旅游</h3>
-					<p>夏威夷 🏝, 迪士尼，佛罗里达, 阿拉斯加!... 有你在就都是目的地</p>
+					<p>夏威夷 🏝, 迪士尼，佛罗里达, 阿拉斯加!... 有你在就都是目的地。</p>
 				</section>
 				<section>
 					<i class="icon style2 major solid fas fa-school"></i>
 					<h3>当北京遇上上海</h3>
-					<p>去我们从小长大的地方看看。街道、楼宇、从小到大的学校... 🏙️ 填满那些我们未曾认识时候的回忆</p>
+					<p>去我们从小长大的地方看看。街道、楼宇、从小到大的学校... 🏙️ 填满那些我们未曾认识时候的回忆。</p>
 				</section>
 				<section>
 					<i class="icon style2 major solid fas fa-list"></i>
 					<h3>还有更多</h3>
-					<p>我们 <i>永远</i> 还有着无限 ∞ 的事情，等着我们一起去完成，创造更多回忆</p>
+					<p>我们 <i>永远</i> 还有着无限 ∞ 的事情，等着我们一起去完成，创造更多回忆。</p>
 				</section>
 			</div>
 		</div>
@@ -104,8 +103,8 @@
 
 	<section class="wrapper style1 align-center">
 		<div class="inner">
-			<h2>Footprints and Plans</h2>
-			<p>To places where you have been. And to you, my future plan.</p>
+			<h2>那些足迹</h2>
+			<p>是你我踏过的足迹。是你我未来的计划。</p>
 			<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1WqrR43uWk7JxrINH5tCAgS_l668Di_01"
 			        width="100%" height="600"></iframe>
 		</div>
@@ -171,8 +170,7 @@
 	-->
 
 	<footer class="wrapper style1 align-center">
-		<div class="inner"> There is a&nbsp;Q.E.D. □ &nbsp;here. But our story
-			goes on :)
+		<div class="inner">此处是一个&nbsp;Q.E.D. □ 但我们的故事还在继续 :)
 		</div>
 	</footer>
 </div>
@@ -187,32 +185,32 @@
 <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
 
 <script type="text/javascript">
-	const btnBgm = document.getElementById("btnBgm");
-	const media = document.getElementById("bgm");
+	const BTN_BGM = document.getElementById("btnBgm");
+	const MEDIA_BGM = document.getElementById("bgm");
 
-	const start = false;
-	if (start) {
-		btnBgm.classList.add("rotating");
-		media.play();
+	const BGM_START = false;
+	if (BGM_START) {
+		BTN_BGM.classList.add("rotating");
+		MEDIA_BGM.play();
 	}
 
-	btnBgm.addEventListener("click", function () {
-		if (media.paused) {
-			btnBgm.classList.add("rotating");
-			let playPromise = media.play();
+	BTN_BGM.addEventListener("click", function () {
+		if (MEDIA_BGM.paused) {
+			BTN_BGM.classList.add("rotating");
+			let playPromise = MEDIA_BGM.play();
 			if (playPromise !== null && playPromise !== undefined) {
-				playPromise.catch(() => media.play());
+				playPromise.catch(() => MEDIA_BGM.play());
 			}
 		} else {
-			btnBgm.classList.remove("rotating");
-			let pausePromise = media.pause();
+			BTN_BGM.classList.remove("rotating");
+			let pausePromise = MEDIA_BGM.pause();
 			if (pausePromise !== null && pausePromise !== undefined) {
-				pausePromise.catch(() => media.pause());
+				pausePromise.catch(() => MEDIA_BGM.pause());
 			}
 		}
 	});
 
-	const timeline_json = {
+	const TIMELINE = {
 		"events": [
 			{
 				"media": {
@@ -233,12 +231,12 @@
 			},
 		]
 	};
-	const additionalOptions = {
+	const OPTS = {
 		timenav_height: 110,
 		hash_bookmark: true,
 		scale_factor: 3
 	};
-	window.timeline = new TL.Timeline('timeline-embed', timeline_json, additionalOptions);
+	window.timeline = new TL.Timeline('timeline-embed', TIMELINE, OPTS);
 </script>
 </body>
 </html>

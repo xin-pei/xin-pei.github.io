@@ -346,16 +346,10 @@
 		let hours = Math.floor((dist % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 		let minutes = Math.floor((dist % (1000 * 60 * 60)) / (1000 * 60));
 		let seconds = Math.floor((dist % (1000 * 60)) / 1000);
-		let strHour = " hour";
-		if (hours > 1) strHour += "s";
-		strHour += ", ";
-		let strMin = " minute";
-		if (minutes > 1) strMin += "s";
-		strMin += ", and ";
-		let strSec = " second";
-		if (seconds > 1) strSec += "s";
-		strSec += ".";
+		let strHour = " 小时，";
+		let strMin = " 分，";
+		let strSec = " 秒。";
 		document.getElementById("headline-timer").innerHTML =
-			days + " days, " + hours + strHour + minutes + strMin + seconds + strSec;
+			days + " 天，" + hours + strHour + minutes + strMin + seconds + strSec;
 	});
 })(jQuery);
