@@ -5,6 +5,16 @@
 */
 
 (function ($) {
+	const GRAPH = document.getElementById("mygallery");
+	GRAPH.innerHTML = "";
+	for (let i = 2; i <= 18; i++) {
+		GRAPH.innerHTML += `<article>
+<a class="image" href="images/gallery/${i}.jpg" 
+style="padding: 10px; background-color: #fff; width: 100%; height: 400px; display: block; margin-left: auto; margin-right: auto;">
+<img alt="" src="images/gallery/${i}.jpg"/>
+</a>
+</article>`;
+	}
 
 	var $window = $(window),
 		$body = $('body'),
@@ -349,7 +359,8 @@
 		let strHour = " 小时，";
 		let strMin = " 分，";
 		let strSec = " 秒。";
-		document.getElementById("headline-timer").innerHTML =
+		document.getElementById("headline-timer").innerHTML = "已持续" +
 			days + " 天，" + hours + strHour + minutes + strMin + seconds + strSec;
 	});
-})(jQuery);
+})
+(jQuery);
