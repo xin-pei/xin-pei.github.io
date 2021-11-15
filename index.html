@@ -1,124 +1,164 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8"/>
-	<title>培</title>
-	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon"/>
-	<meta content="width=device-width, initial-scale=1, user-scalable=no"
-	      name="viewport"/>
-	<link href="assets/css/main.css" rel="stylesheet"/>
-	<link href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css"
-	      rel="stylesheet" title="timeline-styles">
-	<noscript>
-		<link href="assets/css/noscript.css" rel="stylesheet"/>
-	</noscript>
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <title>培</title>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta
+      content="width=device-width, initial-scale=1, user-scalable=no"
+      name="viewport"
+    />
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <link
+      href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css"
+      rel="stylesheet"
+      title="timeline-styles"
+    />
+    <noscript>
+      <link href="assets/css/noscript.css" rel="stylesheet" />
+    </noscript>
+  </head>
 
-<body class="is-preload">
+  <body class="is-preload">
+    <audio id="bgm" loop style="display:none">
+      <source src="assets/bgm.mp3" />
+    </audio>
 
-<audio id="bgm" loop style="display:none">
-	<source src="assets/bgm.mp3">
-</audio>
+    <a
+      ><img
+        alt="BGM"
+        id="btnBgm"
+        src="images/bgmicon.png"
+        style="position:fixed; z-index: 999; top: 25px; right: 40px; opacity: 0.7; border-radius: 50%; "
+      />
+    </a>
 
-<a><img alt="BGM" id="btnBgm" src="images/bgmicon.png"
-        style="position:fixed; z-index: 999; top: 25px; right: 40px; opacity: 0.7; border-radius: 50%; "/>
-</a>
+    <div class="divided" id="wrapper">
+      <section
+        class="
+          banner
+          style1
+          orient-left
+          content-align-left
+          image-position-right
+          fullscreen
+          onload-image-fade-in onload-content-fade-right
+        "
+      >
+        <div class="content">
+          <h2>你在身边，<i>心沛</i> 之喜...</h2>
+          <p class="major" id="headline-timer"></p>
+          <p>
+            图片里，是一个动态的四维超正方体。<br />
+            它的16个顶点在时空中交错飞舞。<br />
+            远远望去，又好像人世间点点星光 彼此交织……<br /><br />
+            直到某一刻，超立方体的投影聚拢。也就在那一瞬：
+          </p>
+          <ul class="actions stacked">
+            <li>
+              <a class="button big wide smooth-scroll-middle" href="#timeline"
+                >我们的故事开始了</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="image"><img alt="" src="images/banner.gif" /></div>
+      </section>
 
-<div class="divided" id="wrapper">
-	<section
-			class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
-		<div class="content">
-			<h2>你在身边，<i>心沛</i> 之喜...</h2>
-			<p class="major" id="headline-timer"></p>
-			<p>图片里，是一个动态的四维超正方体。<br>
-				它的16个顶点在时空中交错飞舞。<br>
-				远远望去，又好像人世间点点星光 彼此交织……<br><br>
-				直到某一刻，超立方体的投影聚拢。也就在那一瞬：</p>
-			<ul class="actions stacked">
-				<li><a class="button big wide smooth-scroll-middle"
-				       href="#timeline">我们的故事开始了</a></li>
-			</ul>
-		</div>
-		<div class="image"><img alt="" src="images/banner.gif"/></div>
-	</section>
+      <section class="wrapper style1 align-center" id="timeline">
+        <div class="inner" style="padding-bottom:0">
+          <h2>时间线</h2>
+          <p style="margin-bottom: 0">
+            每读一遍我们的故事&nbsp;都会让我嘴角上扬
+          </p>
+        </div>
+        <div id="timeline-embed" style="width: 100%; height: 640px"></div>
 
-	<section class="wrapper style1 align-center" id="timeline">
-		<div class="inner" style="padding-bottom:0">
-			<h2>时间线</h2>
-			<p style="margin-bottom: 0">每读一遍我们的故事&nbsp;都会让我嘴角上扬</p>
-		</div>
-		<div id='timeline-embed' style="width: 100%; height: 640px"></div>
+        <!--		<iframe allowfullscreen-->
+        <!--		        frameborder='0' height='640' mozallowfullscreen-->
+        <!--		        src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=17Cqp9mUotGI_4l5BIHcWxpOQ9eXKf9z-nDTZzKOPKJU&font=Default&lang=en&initial_zoom=2&height=650'-->
+        <!--		        webkitallowfullscreen width='100%'></iframe>-->
+      </section>
 
-		<!--		<iframe allowfullscreen-->
-		<!--		        frameborder='0' height='640' mozallowfullscreen-->
-		<!--		        src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=17Cqp9mUotGI_4l5BIHcWxpOQ9eXKf9z-nDTZzKOPKJU&font=Default&lang=en&initial_zoom=2&height=650'-->
-		<!--		        webkitallowfullscreen width='100%'></iframe>-->
-	</section>
+      <section class="wrapper style1 align-center">
+        <div class="inner">
+          <h2>照相馆</h2>
+          <p>图像记载珍贵的回忆</p>
+        </div>
 
-	<section class="wrapper style1 align-center">
-		<div class="inner">
-			<h2>照相馆</h2>
-			<p>图像记载珍贵的回忆</p>
-		</div>
+        <div
+          class="gallery style2 small lightbox onscroll-fade-in"
+          id="mygallery"
+        ></div>
+      </section>
 
-		<div class="gallery style2 small lightbox onscroll-fade-in"
-		     id="mygallery">
-		</div>
-	</section>
+      <script type="text/javascript"></script>
 
-	<script type="text/javascript">
-	</script>
+      <section class="wrapper style1 align-center">
+        <div class="inner">
+          <h2>待办事项</h2>
+          <p>这些事因你而变得重要</p>
+          <div class="items style1 medium onscroll-fade-in">
+            <section>
+              <i class="icon style2 major solid fas fa-running"></i>
+              <h3>运动健身</h3>
+              <p>
+                拖了很久的要去我们公寓楼里的乒乓球🏓跃跃欲试哈！除此以外🏃🏸🎾我们身体棒棒一定是第一💪
+              </p>
+            </section>
+            <section>
+              <i class="icon style2 major solid fas fa-chess-rook"></i>
+              <h3>乐高之哈利波特的城堡</h3>
+              <p>
+                唔，你喜欢哈利波特，我喜欢乐高哈哈
+                那城堡🏰拼出来一定灰常灰常壮观呐~
+              </p>
+            </section>
+            <section>
+              <i class="icon style2 major solid fas fa-ice-cream"></i>
+              <h3>自制甜品美食</h3>
+              <p>燃烧吧🔥灶台和我们的吃货之魂！[中二病发作]</p>
+            </section>
+            <section>
+              <i class="icon style2 major solid fas fa-route"></i>
+              <h3>旅游</h3>
+              <p>
+                夏威夷 🏝, 迪士尼，佛罗里达, 阿拉斯加!... 有你在就都是目的地。
+              </p>
+            </section>
+            <section>
+              <i class="icon style2 major solid fas fa-school"></i>
+              <h3>当北京遇上上海</h3>
+              <p>
+                去我们从小长大的地方看看。街道、楼宇、从小到大的学校... 🏙️
+                填满那些我们未曾认识时候的回忆。
+              </p>
+            </section>
+            <section>
+              <i class="icon style2 major solid fas fa-list"></i>
+              <h3>还有更多</h3>
+              <p>
+                我们 <i>永远</i> 还有着无限 ∞
+                的事情，等着我们一起去完成，创造更多回忆。
+              </p>
+            </section>
+          </div>
+        </div>
+      </section>
 
-	<section class="wrapper style1 align-center">
-		<div class="inner">
-			<h2>待办事项</h2>
-			<p>这些事因你而变得重要</p>
-			<div class="items style1 medium onscroll-fade-in">
-				<section>
-					<i class="icon style2 major solid fas fa-running"></i>
-					<h3>运动健身</h3>
-					<p>拖了很久的要去我们公寓楼里的乒乓球🏓跃跃欲试哈！除此以外🏃🏸🎾我们身体棒棒一定是第一💪</p>
-				</section>
-				<section>
-					<i class="icon style2 major solid fas fa-chess-rook"></i>
-					<h3>乐高之哈利波特的城堡</h3>
-					<p>唔，你喜欢哈利波特，我喜欢乐高哈哈 那城堡🏰拼出来一定灰常灰常壮观呐~</p>
-				</section>
-				<section>
-					<i class="icon style2 major solid fas fa-ice-cream"></i>
-					<h3>自制甜品美食</h3>
-					<p>燃烧吧🔥灶台和我们的吃货之魂！[中二病发作]</p>
-				</section>
-				<section>
-					<i class="icon style2 major solid fas fa-route"></i>
-					<h3>旅游</h3>
-					<p>夏威夷 🏝, 迪士尼，佛罗里达, 阿拉斯加!... 有你在就都是目的地。</p>
-				</section>
-				<section>
-					<i class="icon style2 major solid fas fa-school"></i>
-					<h3>当北京遇上上海</h3>
-					<p>去我们从小长大的地方看看。街道、楼宇、从小到大的学校... 🏙️ 填满那些我们未曾认识时候的回忆。</p>
-				</section>
-				<section>
-					<i class="icon style2 major solid fas fa-list"></i>
-					<h3>还有更多</h3>
-					<p>我们 <i>永远</i> 还有着无限 ∞ 的事情，等着我们一起去完成，创造更多回忆。</p>
-				</section>
-			</div>
-		</div>
-	</section>
+      <section class="wrapper style1 align-center">
+        <div class="inner">
+          <h2>那些足迹</h2>
+          <p>是你我踏过的足迹&nbsp;是你我未来的计划</p>
+          <iframe
+            src="https://www.google.com/maps/d/embed?mid=1WqrR43uWk7JxrINH5tCAgS_l668Di_01"
+            width="100%"
+            height="600"
+          ></iframe>
+        </div>
+      </section>
 
-	<section class="wrapper style1 align-center">
-		<div class="inner">
-			<h2>那些足迹</h2>
-			<p>是你我踏过的足迹&nbsp;是你我未来的计划</p>
-			<iframe src="https://www.google.com/maps/d/embed?mid=1WqrR43uWk7JxrINH5tCAgS_l668Di_01"
-			        width="100%" height="600"></iframe>
-		</div>
-	</section>
-
-
-	<!--
+      <!--
 	< before sunrise >
 	<section
 			class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
@@ -176,91 +216,125 @@
 	</section>
 	-->
 
-	<footer class="wrapper style1 align-center">
-		<div class="inner">此处是一个&nbsp;Q.E.D. □ 但我们的故事还在继续 :)
-		</div>
-	</footer>
-</div>
+      <footer class="wrapper style1 align-center">
+        <div class="inner">
+          此处是一个&nbsp;Q.E.D. □ 但我们的故事还在继续 :)
+        </div>
+      </footer>
+    </div>
 
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
-<script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
 
-<script type="text/javascript">
-	const BTN_BGM = document.getElementById("btnBgm");
-	const MEDIA_BGM = document.getElementById("bgm");
+    <script type="text/javascript">
+      const BTN_BGM = document.getElementById("btnBgm");
+      const MEDIA_BGM = document.getElementById("bgm");
 
-	const BGM_START = false;
-	if (BGM_START) {
-		BTN_BGM.classList.add("rotating");
-		MEDIA_BGM.play();
-	}
+      const BGM_START = false;
+      if (BGM_START) {
+        BTN_BGM.classList.add("rotating");
+        MEDIA_BGM.play();
+      }
 
-	BTN_BGM.addEventListener("click", function () {
-		if (MEDIA_BGM.paused) {
-			BTN_BGM.classList.add("rotating");
-			let playPromise = MEDIA_BGM.play();
-			if (playPromise !== null && playPromise !== undefined) {
-				playPromise.catch(() => MEDIA_BGM.play());
-			}
-		} else {
-			BTN_BGM.classList.remove("rotating");
-			let pausePromise = MEDIA_BGM.pause();
-			if (pausePromise !== null && pausePromise !== undefined) {
-				pausePromise.catch(() => MEDIA_BGM.pause());
-			}
-		}
-	});
+      BTN_BGM.addEventListener("click", function () {
+        if (MEDIA_BGM.paused) {
+          BTN_BGM.classList.add("rotating");
+          let playPromise = MEDIA_BGM.play();
+          if (playPromise !== null && playPromise !== undefined) {
+            playPromise.catch(() => MEDIA_BGM.play());
+          }
+        } else {
+          BTN_BGM.classList.remove("rotating");
+          let pausePromise = MEDIA_BGM.pause();
+          if (pausePromise !== null && pausePromise !== undefined) {
+            pausePromise.catch(() => MEDIA_BGM.pause());
+          }
+        }
+      });
 
-	const TIMELINE = {
-		"events": [
-			{
-				"media": {
-					"url": "https://images.adsttc.com/media/images/60ae/5ae0/f91c/81f6/2800/00a4/large_jpg/Little_Island_2021_05_20_DSC_9450_CREDIT_Timothy_Schenck.jpg?1622039224",
-					"thumbnail": "https://img.icons8.com/glyph-neue/64/000000/island-on-water.png"
-				},
-				"start_date": {
-					"month": "7",
-					"day": "17",
-					"year": "2021",
-					"hour": "10",
-					"minute": "30"
-				},
-				"text": {
-					"headline": "初次见面 请多指教  ;)",
-					"text": "忘不掉风和日丽下我俩共撑一把遮阳伞看夏威夷风情的唱歌，<br>忘不掉博物馆大落地窗前 我俩一起看着寂静的雨，畅谈遥不可及的梦想（放假去欧洲旅游一个月）<br>忘不掉最后你竟和我去了我的公寓楼！正好你朋友和我住一栋楼的巧合哈哈<br>还忘不掉你呆萌可爱的样子：走过去~再走回来~"
-				}
-			},
-			{
-				"media": {
-					"url": "https://momath.org/wp-content/themes/momath-prod/hero/home1.jpg",
-					"thumbnail": "https://img.icons8.com/material-outlined/24/000000/pi.png"
-				},
-				"start_date": {
-					"month": "7",
-					"day": "24",
-					"year": "2021",
-					"hour": "10",
-					"minute": "30"
-				},
-				"text": {
-					"headline": "约会竟在数学博物馆😂",
-					"text": "是我本理工直男行为无误了！至少我感觉我自己玩的还很开心是怎么回事……但是看到你（被迫/莫名其妙的）解起来数学题的侧颜，以及晚餐吃不下却依旧点的日式炸鸡翅，都觉得和你一起过的时光真的好愉快呢！"
-				}
-			},
-		]
-	};
-	const OPTS = {
-		timenav_height: 110,
-		hash_bookmark: true,
-		scale_factor: 3
-	};
-	window.timeline = new TL.Timeline('timeline-embed', TIMELINE, OPTS);
-</script>
-</body>
+      const TIMELINE = {
+        events: [
+          {
+            media: {
+              url: "https://images.adsttc.com/media/images/60ae/5ae0/f91c/81f6/2800/00a4/large_jpg/Little_Island_2021_05_20_DSC_9450_CREDIT_Timothy_Schenck.jpg?1622039224",
+              thumbnail:
+                "https://img.icons8.com/glyph-neue/64/000000/island-on-water.png",
+            },
+            start_date: {
+              month: "7",
+              day: "17",
+              year: "2021",
+              hour: "10",
+              minute: "30",
+            },
+            text: {
+              headline: "初次见面 请多指教  ;)",
+              text: "忘不掉风和日丽下我俩共撑一把遮阳伞看夏威夷风情的唱歌，<br>忘不掉博物馆大落地窗前 我俩一起看着寂静的雨，畅谈遥不可及的梦想（放假去欧洲旅游一个月）<br>忘不掉最后你竟和我去了我的公寓楼！正好你朋友和我住一栋楼的巧合哈哈<br>还忘不掉你呆萌可爱的样子，坐错站、关不上包、还是……走过去~再走回来~",
+            },
+          },
+          {
+            media: {
+              url: "https://momath.org/wp-content/themes/momath-prod/hero/home1.jpg",
+              thumbnail:
+                "https://img.icons8.com/material-outlined/24/000000/pi.png",
+            },
+            start_date: {
+              month: "7",
+              day: "24",
+              year: "2021",
+              hour: "14",
+              minute: "30",
+            },
+            text: {
+              headline: "约会竟在数学博物馆😂",
+              text: "是我本理工直男行为无误了！至少我感觉我自己玩的还很开心是怎么回事……<br>但是看到你（被迫/莫名其妙的）解起来数学题的侧颜，以及晚餐吃不下却依旧点的日式炸鸡翅，都觉得和你一起过的时光真的好愉快呢！",
+            },
+          },
+          {
+            media: {
+              url: "https://momath.org/wp-content/themes/momath-prod/hero/home1.jpg",
+              thumbnail:
+                "https://img.icons8.com/material-outlined/24/000000/pi.png",
+            },
+            start_date: {
+              month: "7",
+              day: "31",
+              year: "2021",
+              hour: "10",
+              minute: "30",
+            },
+            text: {
+              headline: "Brooklyn和第一次告白",
+              text: `风和日丽的七月里，最后一天的Brooklyn之旅。有着太多细节的回忆让我数不过来了lol<ol>
+				<li>约了地铁站见面不幸错过，赶紧约在下一站的地铁车头</li>
+				<li>第一次去网红Brooklyn Bridge桥下 你让“同学”我兴致勃勃地为你拍照，却因技术不好只留下了寥寥数张</li>
+        <li>走上了“危险的”人与自行车并道的Brooklyn Bridge，身后驶来的自行车让我的下意识是在不经意间用身体抱住/护住你，伴随着依旧是那个你的香水味，我们有了第一次的亲密肢体接触</li>
+				<li>去吃brunch的路上聊了你和你研究生室友的日常，门口有只吵吵的狗，坐在外面你问我“你妈妈知道你最近和我‘混’在一起吗”，微风吹过略冷为你披上的外套</li>
+        <li>饭后沿河走在公园里，看到美国爸妈放任他们的小孩在前面乱走，不由得感慨家庭生活的美好和温馨</li>
+        <li>喝了网红%咖啡，玩性大发还打卡了大桥下的旋转木马，拍了又一次的合影照片视频~</li>
+        <li>走在小路上，路过各种小店例如书店和餐具店，你也与我非常走心地分享了一次高中时期你自己的迷茫和苦恼，让我感觉到与你的心更近</li>
+        <li>又是一路去了水族馆看了超级无敌可爱的海狮，看上去不好看但很好吃的鱼，还有那 Coney Island 旁的 beach</li>
+        <li>回城的uber上共听一首音乐，我便跃跃欲试?蠢蠢欲动?把在包里早已准备好的表白信和令人出洋相的复读鸭拿了出来……[害羞]</li>
+        <li>第一次在车上牵手手哦！呜呜呜呜呜……</li>
+        <li>打开了Jersey City一家还不错的古巴餐厅，虽然风格小众，但菜式竟然出奇的还不错！</li>
+				<ol>
+          写到这里我发现我俩那时真的好能跑哈哈 起码周末旅游一万步起步！现在的宅当然有身体、天气冷的原因，但是我们终有继续打卡更多地方，一起探索世界的美好愿望~`
+            },
+          },
+        ],
+      };
+      const OPTS = {
+        timenav_height: 110,
+        hash_bookmark: true,
+        scale_factor: 3,
+      };
+      window.timeline = new TL.Timeline("timeline-embed", TIMELINE, OPTS);
+    </script>
+  </body>
 </html>
