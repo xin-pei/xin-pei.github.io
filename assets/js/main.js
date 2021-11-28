@@ -7,7 +7,7 @@
 (function ($) {
 	const GRAPH = document.getElementById("mygallery");
 	GRAPH.innerHTML = "";
-	for (let i = 2; i <= 18; i++) {
+	for (let i = -2; i <= 19; i++) {
 		GRAPH.innerHTML += `<article>
 <a class="image" href="images/gallery/${i}.jpg" 
 style="padding: 10px; background-color: #fff; width: 100%; height: 400px; display: block; margin-left: auto; margin-right: auto;">
